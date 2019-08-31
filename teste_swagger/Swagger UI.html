@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link rel="icon" type="image/png" href="http://localhost:8090/webjars/springfox-swagger-ui/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://localhost:8090/webjars/springfox-swagger-ui/images/favicon-16x16.png" sizes="16x16">
+  <link href="Swagger%20UI_arquivos/typography.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="Swagger%20UI_arquivos/reset.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="Swagger%20UI_arquivos/screen.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="Swagger%20UI_arquivos/reset.css" media="print" rel="stylesheet" type="text/css">
+  <link href="Swagger%20UI_arquivos/print.css" media="print" rel="stylesheet" type="text/css">
+
+  <script src="Swagger%20UI_arquivos/object-assign-pollyfill.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/jquery-1.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/jquery_003.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/jquery.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/jquery_002.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/handlebars-4.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/lodash.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/backbone-min.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/swagger-ui.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/highlight.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/highlight_002.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/jsoneditor.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/marked.js" type="text/javascript"></script>
+  <script src="Swagger%20UI_arquivos/swagger-oauth.js" type="text/javascript"></script>
+
+  <script src="Swagger%20UI_arquivos/springfox.js" type="text/javascript"></script>
+</head>
+
+<body class="swagger-section">
+<div id="header">
+  <div class="swagger-ui-wrap">
+    <a id="logo" href="http://swagger.io/"><img class="logo__img" alt="swagger" src="Swagger%20UI_arquivos/logo_small.png" width="30" height="30"><span class="logo__title">swagger</span></a>
+    <form id="api_selector">
+      <div class="input">
+        <select id="select_baseUrl" name="select_baseUrl"><option value="http://localhost:8090/v2/api-docs" selected="selected">default (/v2/api-docs)</option></select><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text" style="display: none;" value="http://localhost:8090/v2/api-docs"></div>
+      <div id="auth_container"></div>
+      <div class="input"><a id="explore" class="header__btn" href="#" data-sw-translate="">Explore</a></div>
+    </form>
+  </div>
+</div>
+
+<div id="message-bar" class="swagger-ui-wrap message-success" data-sw-translate=""></div>
+<div id="swagger-ui-container" class="swagger-ui-wrap"><div class="info" id="api_info">
+  <div class="info_title">Api Documentation</div>
+  <div class="info_description markdown"><p>Api Documentation</p>
+</div>
+  
+  
+  
+  
+  <div class="info_license"><a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></div>
+</div>
+<div class="container" id="resources_container">
+  <div class="authorize-wrapper"></div>
+
+  <ul id="resources"><li id="resource_customer45controller" class="resource active"><div class="heading">
+  <h2>
+    <a href="#!/customer45controller" class="toggleEndpointList" data-id="customer45controller">customer-controller</a>  : Customer Controller
+  </h2>
+  <ul class="options">
+    <li>
+      <a href="#!/customer45controller" id="endpointListTogger_customer45controller" class="toggleEndpointList" data-id="customer45controller" data-sw-translate="">Show/Hide</a>
+    </li>
+    <li>
+      <a href="#" class="collapseResource" data-id="customer45controller" data-sw-translate="">
+        List Operations
+      </a>
+    </li>
+    <li>
+      <a href="#" class="expandResource" data-id="customer45controller" data-sw-translate="">
+        Expand Operations
+      </a>
+    </li>
+  </ul>
+</div>
+<ul class="endpoints" id="customer45controller_endpoint_list" style="">
+
+<li class="endpoint">  <ul class="operations">
+    <li class="get operation" id="customer45controller_showCustomersUsingGET">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/customer45controller/showCustomersUsingGET" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/customer45controller/showCustomersUsingGET" class="toggleOperation ">/customers</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/customer45controller/showCustomersUsingGET" class="toggleOperation"><span class="markdown"><p>showCustomers</p>
+</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="customer45controller_showCustomersUsingGET_content" style="">
+          <div class="response-class">
+            <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+              <div class="markdown"><p>OK</p>
+</div>
+            <p><span class="model-signature"><div>
+<div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+      <span class="strong">Resources«Customer» {</span><div><span class="propName ">content</span> (<span class="propType">Array[Customer]</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">links</span> (<span class="propType">Array[Link]</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Customer {</span><div><span class="propName ">firstName</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">lastName</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Link {</span><div><span class="propName ">deprecation</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">href</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">hreflang</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">media</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">rel</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">templated</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">title</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">type</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+      <div class="snippet_json" style="display: block;">
+        <pre><code class="hljs json">{
+  "<span class="hljs-attr">content</span>": [
+    {
+      "<span class="hljs-attr">firstName</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">lastName</span>": <span class="hljs-string">"string"</span>
+    }
+  ],
+  "<span class="hljs-attr">links</span>": [
+    {
+      "<span class="hljs-attr">deprecation</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">href</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">hreflang</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">media</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">rel</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">templated</span>": <span class="hljs-literal">true</span>,
+      "<span class="hljs-attr">title</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">type</span>": <span class="hljs-string">"string"</span>
+    }
+  ]
+}</code></pre>
+        
+      </div>
+  </div>
+</div>
+</div></div></div></span></p>
+            <br>
+            <div class="response-content-type"><div><label data-sw-translate="" for="rct0.9097596125645213">Response Content Type</label>
+<select name="responseContentType" id="rct0.9097596125645213">
+  <option value="application/json" selected="selected">application/json</option>
+</select>
+</div></div>
+            </div>
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth response-messages">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td class="code" width="15%">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td class="code" width="15%">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td class="code" width="15%">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li><li class="endpoint">  <ul class="operations">
+    <li class="post operation" id="customer45controller_createUsingPOST">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/customer45controller/createUsingPOST" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/customer45controller/createUsingPOST" class="toggleOperation ">/customers</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/customer45controller/createUsingPOST" class="toggleOperation"><span class="markdown"><p>create</p>
+</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="customer45controller_createUsingPOST_content" style="">
+          <div class="response-class">
+            <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+              <div class="markdown"><p>OK</p>
+</div>
+            <p><span class="model-signature"><div>
+<div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+      <span class="strong">Resource«Customer» {</span><div><span class="propName ">firstName</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">lastName</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">links</span> (<span class="propType">Array[Link]</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Link {</span><div><span class="propName ">deprecation</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">href</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">hreflang</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">media</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">rel</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">templated</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">title</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">type</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+      <div class="snippet_json" style="display: block;">
+        <pre><code class="hljs json">{
+  "<span class="hljs-attr">firstName</span>": <span class="hljs-string">"string"</span>,
+  "<span class="hljs-attr">lastName</span>": <span class="hljs-string">"string"</span>,
+  "<span class="hljs-attr">links</span>": [
+    {
+      "<span class="hljs-attr">deprecation</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">href</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">hreflang</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">media</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">rel</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">templated</span>": <span class="hljs-literal">true</span>,
+      "<span class="hljs-attr">title</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">type</span>": <span class="hljs-string">"string"</span>
+    }
+  ]
+}</code></pre>
+        
+      </div>
+  </div>
+</div>
+</div></div></div></span></p>
+            <br>
+            <div class="response-content-type"><div><label data-sw-translate="" for="rct0.6458377536186545">Response Content Type</label>
+<select name="responseContentType" id="rct0.6458377536186545">
+  <option value="application/json" selected="selected">application/json</option>
+</select>
+</div></div>
+            </div>
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Parameters</h4>
+          <table class="fullwidth parameters">
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+            <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+            <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+            </tr>
+          </thead>
+          <tbody class="operation-params">
+
+          <tr><td class="code required"><label for="mnewCustomer0.0006774430755247529">newCustomer</label></td>
+<td>
+				<textarea class="body-textarea required" placeholder="(required)" name="newCustomer" id="mnewCustomer0.0006774430755247529">{
+  "firstName": "Carlos",
+  "lastName": "Monari"
+}</textarea>
+				<div class="editor_holder"></div>
+				<br>
+				<div class="parameter-content-type"><div><label for="pct0.6226663884083766" data-sw-translate="">Parameter content type:</label>
+<select name="parameterContentType" id="pct0.6226663884083766">
+  <option value="application/json" selected="selected">application/json</option>
+</select>
+</div></div>
+</td>
+<td>
+	<strong><span class="markdown"><p>newCustomer</p>
+</span></strong>
+</td>
+<td>body</td>
+<td><span class="model-signature"><div>
+<div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+      <span class="strong">Customer {</span><div><span class="propName ">firstName</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">lastName</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+      <div class="snippet_json" style="display: block;">
+        <pre><code class="hljs json">{
+  "<span class="hljs-attr">firstName</span>": <span class="hljs-string">"string"</span>,
+  "<span class="hljs-attr">lastName</span>": <span class="hljs-string">"string"</span>
+}</code></pre>
+        <small class="notice" data-sw-translate=""></small>
+      </div>
+  </div>
+</div>
+</div></div></div></span></td>
+</tr></tbody>
+          </table>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth response-messages">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td class="code" width="15%">201</td>
+<td class="markdown"><p>Created</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td class="code" width="15%">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td class="code" width="15%">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td class="code" width="15%">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="#" class="response_hider" style="display:none" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display:none"></span>
+          </div>
+        </form>
+        <div class="response" style="display:none">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body"></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li><li class="endpoint">  <ul class="operations">
+    <li class="get operation" id="customer45controller_showCustomerUsingGET">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/customer45controller/showCustomerUsingGET" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/customer45controller/showCustomerUsingGET" class="toggleOperation ">/customers/{id}</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/customer45controller/showCustomerUsingGET" class="toggleOperation"><span class="markdown"><p>showCustomer</p>
+</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="customer45controller_showCustomerUsingGET_content" style="">
+          <div class="response-class">
+            <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+              <div class="markdown"><p>OK</p>
+</div>
+            <p><span class="model-signature"><div>
+<div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+      <span class="strong">Resource«Customer» {</span><div><span class="propName ">firstName</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">lastName</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">links</span> (<span class="propType">Array[Link]</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span><br><span class="strong">Link {</span><div><span class="propName ">deprecation</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">href</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">hreflang</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">media</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">rel</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">templated</span> (<span class="propType">boolean</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">title</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>),</div><div><span class="propName ">type</span> (<span class="propType">string</span>, <span class="propOptKey">optional</span>)</div><span class="strong">}</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+      <div class="snippet_json" style="display: block;">
+        <pre><code class="hljs json">{
+  "<span class="hljs-attr">firstName</span>": <span class="hljs-string">"string"</span>,
+  "<span class="hljs-attr">lastName</span>": <span class="hljs-string">"string"</span>,
+  "<span class="hljs-attr">links</span>": [
+    {
+      "<span class="hljs-attr">deprecation</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">href</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">hreflang</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">media</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">rel</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">templated</span>": <span class="hljs-literal">true</span>,
+      "<span class="hljs-attr">title</span>": <span class="hljs-string">"string"</span>,
+      "<span class="hljs-attr">type</span>": <span class="hljs-string">"string"</span>
+    }
+  ]
+}</code></pre>
+        
+      </div>
+  </div>
+</div>
+</div></div></div></span></p>
+            <br>
+            <div class="response-content-type"><div><label data-sw-translate="" for="rct0.32957878344448865">Response Content Type</label>
+<select name="responseContentType" id="rct0.32957878344448865">
+  <option value="application/json" selected="selected">application/json</option>
+</select>
+</div></div>
+            </div>
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Parameters</h4>
+          <table class="fullwidth parameters">
+          <thead>
+            <tr>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter</th>
+            <th style="width: 310px; max-width: 310px" data-sw-translate="">Value</th>
+            <th style="width: 200px; max-width: 200px" data-sw-translate="">Description</th>
+            <th style="width: 100px; max-width: 100px" data-sw-translate="">Parameter Type</th>
+            <th style="width: 220px; max-width: 230px" data-sw-translate="">Data Type</th>
+            </tr>
+          </thead>
+          <tbody class="operation-params">
+
+          <tr><td class="code required"><label for="mid0.4532195952399134">id</label></td>
+<td>
+<input class="parameter required" minlength="1" name="id" placeholder="(required)" id="mid0.4532195952399134" type="text" value="3"></td>
+<td>
+	<strong><span class="markdown"><p>id</p>
+</span></strong>
+</td>
+<td>path</td>
+<td><span class="model-signature">long</span></td>
+</tr></tbody>
+          </table>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth response-messages">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td class="code" width="15%">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td class="code" width="15%">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td class="code" width="15%">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="#" class="response_hider" style="" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display: none;"></span>
+          </div>
+        </form>
+        <div class="response" style="">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"><pre>curl -X GET --header 'Accept: application/json' 'http://localhost:8090/customers/3'</pre></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"><pre>http://localhost:8090/customers/3</pre></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"><pre>{<br>  "Accept": "application/json"<br>}</pre></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body hljs json"><pre class="json"><code>{
+  "<span class="hljs-attr">id</span>": <span class="hljs-number">3</span>,
+  "<span class="hljs-attr">firstName</span>": <span class="hljs-string">"Carlos"</span>,
+  "<span class="hljs-attr">lastName</span>": <span class="hljs-string">"Monari"</span>,
+  "<span class="hljs-attr">_links</span>": {
+    "<span class="hljs-attr">self</span>": {
+      "<span class="hljs-attr">href</span>": <span class="hljs-string">"http://localhost:8090/customers/3"</span>
+    }
+  }
+}</code></pre></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"><pre>200</pre></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"><pre>{<br>  "content-type": "application/json;charset=UTF-8",<br>  "date": "Sat, 31 Aug 2019 21:30:08 GMT",<br>  "transfer-encoding": "chunked"<br>}</pre></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li></ul>
+</li></ul>
+
+  <div class="footer">
+    <h4 style="color: #999">[ <span style="font-variant: small-caps">base url</span>: /
+  , <span style="font-variant: small-caps" data-sw-translate="">api version</span>: 1.0
+    ]
+    </h4>
+    </div>
+</div>
+</div>
+
+
+</body></html>
